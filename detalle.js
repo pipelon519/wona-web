@@ -3,7 +3,7 @@ const productsDB = {
     'ds01': {
         name: 'Desayuno Mini',
         category: 'Desayunos',
-        price: '$ Consultar',
+        price: '$ 52.000',
         description: 'Un detalle pequeño pero lleno de sabor y elegancia. Perfecto para recordar a alguien especial que estás pensando en él/ella.',
         image: 'assets/ds01.jpeg',
         includes: [
@@ -18,12 +18,12 @@ const productsDB = {
         ]
     },
 
-    'ds03': {
+    'ds02': {
         name: 'Desayuno Star',
         category: 'Desayunos',
-        price: '$ Consultar',
+        price: '$',
         description: 'Para quienes merecen brillar desde el primer momento del día. Nuestro desayuno estrella con los mejores ingredientes.',
-        image: 'assets/ds03.jpeg',
+        image: 'assets/ds02.jpeg',
         includes: [
             'Crepes de jamón y queso',
             'Milo o Jugo de naranja',
@@ -37,7 +37,7 @@ const productsDB = {
             'Caja de madera decorada'
         ]
     },
-    'ds04': {
+    'ds03': {
         name: 'Desayuno Mix',
         category: 'Desayunos',
         price: '$ Consultar',
@@ -101,7 +101,7 @@ const productsDB = {
         ]
     },
 
-    'ds08': {
+    'ds07': {
         name: 'Desayuno Feliz Día',
         category: 'Desayunos',
         price: '$ Consultar',
