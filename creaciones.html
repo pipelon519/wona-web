@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Creaciones | Wona</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="creaciones.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/wona.png" alt="Logo"></a>
+            <button class="mobile-menu-btn" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="creaciones.html" class="active">Nuestras Creaciones</a></li>
+                <li><a href="#contacto" class="btn-primary">Contactar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container text-center">
+            <span class="hero-subtitle">Galería</span>
+            <h1>Momentos <span class="text-gold">Inolvidables</span>.</h1>
+            <p style="max-width: 600px; margin: 1rem auto; color: var(--color-text-light);">
+                Un vistazo a los detalles que hemos creado con amor para sorprender a quienes más quieres.
+            </p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section section-padding">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Gallery Items -->
+                <div class="gallery-item" data-caption="Desayuno Mini" data-id="ds01">
+                    <img src="assets/ds01.jpeg" alt="Desayuno Mini">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Desayuno Star" data-id="ds03">
+                    <img src="assets/ds03.jpeg" alt="Desayuno Star">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Desayuno Mix" data-id="ds04">
+                    <img src="assets/ds04.jpeg" alt="Desayuno Mix">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Desayuno Fiesta" data-id="ds05">
+                    <img src="assets/ds05.jpeg" alt="Desayuno Fiesta">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Desayuno Love" data-id="ds06">
+                    <img src="assets/ds06.jpeg" alt="Desayuno Love">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Desayuno Feliz Día" data-id="ds08">
+                    <img src="assets/ds08.jpeg" alt="Desayuno Feliz Día">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- Using placeholders for variety if needed, or repeat images for demo -->
+                <div class="gallery-item" data-caption="Ramo Elegance" data-id="fl01">
+                    <img src="assets/fl01.jpeg" alt="Ramo Elegance">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-caption="Caja Sweet Moments" data-id="cj01">
+                    <img src="assets/cj01.jpeg" alt="Caja Sweet Moments">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-image-col">
+                <img id="lightbox-img" src="" alt="Galería">
+            </div>
+            <div class="lightbox-info-col">
+                <h3 id="lightbox-caption-text">Título de la imagen</h3>
+                <p class="lightbox-desc">Una creación única para sorprender.</p>
+                <a id="lightbox-link" href="#" class="btn-primary btn-sm">Ir al producto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-footer">Wona<span class="gold-dot">.</span></a>
+                <p>Elevando el arte de regalar.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="creaciones.html">Nuestras Creaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2024 Wona. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="creaciones.js"></script>
+</body>
+
+</html>

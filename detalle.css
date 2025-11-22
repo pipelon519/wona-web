@@ -1,0 +1,138 @@
+/* --- Product Detail Page Styles --- */
+
+.product-detail-section {
+    padding-top: 8rem;
+    /* Account for fixed navbar */
+    min-height: 80vh;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    color: var(--color-gold);
+    transform: translateX(-5px);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* Image Section */
+.detail-image-container {
+    position: sticky;
+    top: 100px;
+}
+
+.main-image {
+    width: 100%;
+    height: 500px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    background-color: #f0f0f0;
+    /* Placeholder color */
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Info Section */
+.detail-info {
+    padding: 1rem 0;
+}
+
+.detail-category {
+    display: block;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.detail-info h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.detail-price {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--color-text-main);
+    font-weight: 400;
+}
+
+.detail-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+}
+
+.detail-includes {
+    background-color: var(--color-bg-alt);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+.detail-includes h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--color-gold);
+}
+
+.detail-includes ul {
+    list-style: none;
+}
+
+.detail-includes ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--color-text-main);
+}
+
+.detail-includes ul li::before {
+    content: '•';
+    color: var(--color-gold);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.detail-actions {
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .main-image {
+        height: 350px;
+    }
+
+    .detail-info h1 {
+        font-size: 2.2rem;
+    }
+}

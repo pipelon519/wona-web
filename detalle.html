@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto | Wona</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detalle.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="assets/wona.png" alt="Logo"></a>
+            <button class="mobile-menu-btn" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="creaciones.html">Nuestras Creaciones</a></li>
+                <li><a href="#contacto" class="btn-primary">Contactar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section section-padding">
+        <div class="container">
+            <a href="productos.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Volver a Productos</a>
+
+            <div class="detail-grid">
+                <!-- Image Gallery -->
+                <div class="detail-image-container">
+                    <div class="main-image">
+                        <img id="product-img" src="" alt="Producto">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="detail-info">
+                    <span id="product-category" class="detail-category">Categoría</span>
+                    <h1 id="product-name">Nombre del Producto</h1>
+                    <p id="product-price" class="detail-price">$0.00</p>
+
+                    <div class="divider-gold" style="margin: 1rem 0;"></div>
+
+                    <p id="product-description" class="detail-description">
+                        Descripción del producto...
+                    </p>
+
+                    <div class="detail-includes">
+                        <h3>Incluye:</h3>
+                        <ul id="product-includes">
+                            <!-- List items will be injected here -->
+                        </ul>
+                    </div>
+
+                    <div class="detail-actions">
+                        <a id="whatsapp-btn" href="#" target="_blank" class="btn-primary btn-lg">
+                            <i class="fa-brands fa-whatsapp"></i> Pedir ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-footer">Wona<span class="gold-dot">.</span></a>
+                <p>Elevando el arte de regalar.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="creaciones.html">Nuestras Creaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2024 Wona. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="detalle.js"></script>
+</body>
+
+</html>
