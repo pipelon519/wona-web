@@ -501,6 +501,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const whatsappUrl = `https://wa.me/573009798063?text=${encodeURIComponent(whatsappMsg)}`;
         document.getElementById('whatsapp-btn').href = whatsappUrl;
 
+        // Load Related Products
+        loadRelatedProducts(productId, product.category);
+
     } else {
         // Product not found handling
         document.querySelector('.product-detail-section .container').innerHTML = `
@@ -512,3 +515,45 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 });
+
+function loadRelatedProducts(currentId, category) {
+    const relatedGrid = document.getElementById('related-products-grid');
+    if (!relatedGrid) return;
+
+    // Filter products by category and exclude current product
+    const related = Object.entries(productsDB)
+        .filter(([id, prod]) => prod.category === category && id !== currentId)
+        .map(([id, prod]) => ({ id, ...prod }));
+
+    // Shuffle and pick up to 3 products
+    const shuffled = related.sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, 3);
+
+    if (selected.length === 0) {
+        document.querySelector('.related-products').style.display = 'none';
+        return;
+    }
+
+    selected.forEach(prod => {
+        const card = document.createElement('article');
+        card.className = 'product-card';
+
+        // Use first image
+        const imgPath = prod.images && prod.images.length > 0
+            ? `assets/${prod.folder}/${prod.images[0]}`
+            : 'assets/placeholder.jpg';
+
+        card.innerHTML = `
+            <div class="product-image">
+                <img src="${imgPath}" alt="${prod.name}">
+            </div>
+            <div class="product-info">
+                <span class="category-tag">${prod.category}</span>
+                <h3>${prod.name}</h3>
+                <p class="price">${prod.price}</p>
+                <a href="detalle.html?id=${prod.id}" class="btn-outline">Ver Detalles</a>
+            </div>
+        `;
+        relatedGrid.appendChild(card);
+    });
+}
