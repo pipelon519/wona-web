@@ -198,170 +198,158 @@ const productsDB = {
     'fl01': {
         name: 'Flores #01',
         category: 'Flores',
-        price: '$ Consultar',
-        description: 'Hermoso arreglo floral para ocasiones especiales.',
+        price: '$ 100.000',
+        description: 'Hermoso arreglo de 20 rosas frescas para ocasiones especiales.',
         folder: 'flores',
         images: ['fl01.jpeg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '20 rosas frescas',
+            'Tarjeta personalizada'
         ]
     },
     'fl02': {
         name: 'Flores #02',
         category: 'Flores',
         price: '$ Consultar',
-        description: 'Elegancia natural en cada pétalo.',
+        description: 'Alegre girasol acompañado de dulces detalles y globos con helio.',
         folder: 'flores',
         images: ['fl02.jpeg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '1 girasol fresco',
+            'Paquete de gomitas',
+            'Ferrero Rocher x4',
+            '2 globos con helio'
         ]
     },
     'fl03': {
         name: 'Flores #03',
         category: 'Flores',
         price: '$ Consultar',
-        description: 'Belleza clásica que nunca pasa de moda.',
+        description: 'Hermoso arreglo de 10 flores frescas con tarjeta personalizada.',
         folder: 'flores',
         images: ['fl03.jpeg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '10 flores frescas',
+            'Tarjeta personalizada'
         ]
     },
-    'fl05': {
-        name: 'Flores #05',
-        category: 'Flores',
-        price: '$ Consultar',
-        description: 'Frescura y color en cada arreglo.',
-        folder: 'flores',
-        images: ['fl05.jpg'],
-        includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
-        ]
-    },
+
     'fl06': {
         name: 'Flores #06',
         category: 'Flores',
-        price: '$ Consultar',
-        description: 'El detalle perfecto para expresar amor.',
+        price: '$ 38.000',
+        description: 'Detalle divertido y duradero con rosas eternas y carritos Hot Wheels.',
         folder: 'flores',
         images: ['fl06.jpg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '3 carritos Hot Wheels',
+            '3 rosas eternas de tela',
+            'Tarjeta personalizada'
         ]
     },
     'fl10': {
         name: 'Flores #10',
         category: 'Flores',
         price: '$ Consultar',
-        description: 'Delicadeza y elegancia en cada detalle.',
+        description: 'Elegante arreglo de rosas con chocolates.',
         folder: 'flores',
         images: ['fl10.jpg', 'fl10-02.jpg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '10 rosas frescas',
+            'Ferrero Rocher x4',
+            'Tarjeta personalizada'
         ]
     },
     'fl07': {
         name: 'Flores #07',
         category: 'Flores',
         price: '$ Consultar',
-        description: 'Arreglo floral vibrante y colorido.',
+        description: 'Detalle sencillo y especial con rosa eterna y Hot Wheels.',
         folder: 'flores',
         images: ['fl07.jpg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '1 carro Hot Wheels',
+            '1 rosa eterna',
+            'Tarjeta personalizada'
         ]
     },
     'fl08': {
         name: 'Flores #08',
         category: 'Flores',
         price: '$ Consultar',
-        description: 'Belleza natural en cada pétalo.',
+        description: 'Radiantes girasoles con chocolates para alegrar el día.',
         folder: 'flores',
         images: ['fl08.jpg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '3 girasoles frescos',
+            'Ferrero Rocher x4',
+            'Tarjeta personalizada'
         ]
     },
     'fl09': {
         name: 'Flores #09',
         category: 'Flores',
         price: '$ Consultar',
-        description: 'Frescura y elegancia combinadas.',
+        description: 'Dúo de girasoles con chocolates, el detalle perfecto.',
         folder: 'flores',
         images: ['fl09.jpg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '2 girasoles frescos',
+            'Ferrero Rocher x4',
+            'Tarjeta personalizada'
         ]
     },
     'fl11': {
         name: 'Flores #11',
         category: 'Flores',
         price: '$ Consultar',
-        description: 'Arreglo especial para ocasiones únicas.',
+        description: 'Detalle especial con rosas, chocolates y globo.',
         folder: 'flores',
         images: ['fl11.jpg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '4 rosas frescas',
+            '1 globo metalizado',
+            '5 Ferrero Rocher',
+            'Tarjeta personalizada'
         ]
     },
     'fl12': {
         name: 'Flores #12',
         category: 'Flores',
         price: '$ Consultar',
-        description: 'Delicadeza en cada detalle floral.',
+        description: 'Hermosa combinación de rosas y girasol en caja rústica.',
         folder: 'flores',
         images: ['fl12.jpg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            'Caja de madera',
+            '7 rosas frescas',
+            '1 girasol fresco',
+            'Mensaje personalizado'
         ]
     },
     'fl13': {
         name: 'Flores #13',
         category: 'Flores',
         price: '$ Consultar',
-        description: 'Hermoso arreglo para expresar sentimientos.',
+        description: 'Elegancia duradera con rosas eternas.',
         folder: 'flores',
         images: ['fl13.jpg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '6 rosas eternas',
+            'Mensaje personalizado'
         ]
     },
     'fl14': {
         name: 'Flores #14',
         category: 'Flores',
         price: '$ Consultar',
-        description: 'Elegancia y color en perfecta armonía.',
+        description: 'Detalle radiante con girasol y chocolates.',
         folder: 'flores',
         images: ['fl14.jpg'],
         includes: [
-            'Flores frescas de temporada',
-            'Arreglo personalizado',
-            'Tarjeta de dedicatoria'
+            '1 girasol fresco',
+            'Ferrero Rocher x4',
+            'Tarjeta personalizada'
         ]
     },
 

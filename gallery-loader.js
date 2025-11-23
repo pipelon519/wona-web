@@ -22,7 +22,7 @@ const galleryConfig = {
         { src: 'assets/flores/fl09.jpg', caption: 'Flores #09', productId: 'fl09', description: 'Frescura y elegancia en perfecta armonía.' },
         { src: 'assets/Peluches/pl03.jpg', caption: 'Peluche #03', productId: 'pl03', description: 'Dulzura infinita para regalar sonrisas.' },
         { src: 'assets/Desayunos/ds02-03.jpg', caption: 'Desayuno Star', productId: 'ds02', description: 'Brilla con este desayuno lleno de estrellas.' },
-        { src: 'assets/flores/fl05.jpg', caption: 'Flores #05', productId: 'fl05', description: 'Arreglo colorido que ilumina cualquier momento.' },
+
         { src: 'assets/Desayunos/ds06.jpeg', caption: 'Desayuno Feliz Día', productId: 'ds06', description: 'La mejor forma de desear un día maravilloso.' },
         { src: 'assets/Cajas/cj02.jpg', caption: 'Caja #02', productId: 'cj02', description: 'Caja mágica llena de sorpresas dulces.' },
         { src: 'assets/Desayunos/ds01-04.jpg', caption: 'Desayuno Mini', productId: 'ds01', description: 'Pequeño gesto, gran impacto en el corazón.' },
