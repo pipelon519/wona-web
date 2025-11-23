@@ -1,65 +1,86 @@
-document.addEventListener('DOMContentLoaded', function () {
+// Lightbox functionality with navigation
+document.addEventListener('DOMContentLoaded', () => {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxCaption = document.getElementById('lightbox-caption-text');
+    const lightboxCaptionText = document.getElementById('lightbox-caption-text');
+    const lightboxDescription = document.getElementById('lightbox-description');
+    const lightboxBtn = document.getElementById('lightbox-btn');
     const closeBtn = document.querySelector('.lightbox-close');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
 
-    // Abrir Lightbox
-    galleryItems.forEach(item => {
-        item.addEventListener('click', function () {
-            const img = this.querySelector('img');
-            const caption = this.getAttribute('data-caption');
-            const productId = this.getAttribute('data-id');
-            const lightboxDesc = document.getElementById('lightbox-description');
-            const lightboxBtn = document.getElementById('lightbox-btn');
+    let currentIndex = 0;
+    let galleryItems = [];
 
-            if (img) {
-                lightboxImg.src = img.src;
-                lightboxCaption.textContent = caption ? caption.split(' - ')[0] : 'Creación Wona';
+    // Wait for gallery to load, then attach click events
+    setTimeout(() => {
+        galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
 
-                // Set description based on caption or default
-                if (caption && caption.includes(' - ')) {
-                    lightboxDesc.textContent = caption.split(' - ')[1];
-                } else {
-                    lightboxDesc.textContent = 'Una creación única hecha con amor para sorprender.';
-                }
-
-                // Configure button
-                if (productId) {
-                    lightboxBtn.style.display = 'inline-block';
-                    lightboxBtn.href = `detalle.html?id=${productId}`;
-                } else {
-                    lightboxBtn.style.display = 'none';
-                }
-
-                lightbox.classList.add('active');
-                lightbox.style.display = 'flex';
-            }
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentIndex = index;
+                openLightbox(item);
+            });
         });
-    });
+    }, 500);
 
-    // Cerrar Lightbox
+    function openLightbox(item) {
+        const img = item.querySelector('img');
+        const caption = item.getAttribute('data-caption') || 'Creación Wona';
+        const productId = item.getAttribute('data-id');
+        const description = item.getAttribute('data-description') || 'Una creación única hecha con amor.';
+
+        lightboxImg.src = img.src;
+        lightboxCaptionText.textContent = caption;
+        lightboxDescription.textContent = description;
+
+        // Show or hide product button
+        if (productId) {
+            lightboxBtn.style.display = 'inline-block';
+            lightboxBtn.href = `detalle.html?id=${productId}`;
+        } else {
+            lightboxBtn.style.display = 'none';
+        }
+
+        lightbox.classList.add('active');
+    }
+
     function closeLightbox() {
         lightbox.classList.remove('active');
-        lightbox.style.display = 'none';
     }
 
-    if (closeBtn) {
-        closeBtn.addEventListener('click', closeLightbox);
+    function showPrevImage() {
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        openLightbox(galleryItems[currentIndex]);
     }
 
-    // Cerrar al hacer clic fuera de la imagen
-    lightbox.addEventListener('click', function (e) {
+    function showNextImage() {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        openLightbox(galleryItems[currentIndex]);
+    }
+
+    // Event listeners
+    closeBtn.addEventListener('click', closeLightbox);
+    prevBtn.addEventListener('click', showPrevImage);
+    nextBtn.addEventListener('click', showNextImage);
+
+    // Close lightbox when clicking outside the content
+    lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) {
             closeLightbox();
         }
     });
 
-    // Cerrar con tecla Escape
-    document.addEventListener('keydown', function (e) {
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+
         if (e.key === 'Escape') {
             closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+            showPrevImage();
+        } else if (e.key === 'ArrowRight') {
+            showNextImage();
         }
     });
 });

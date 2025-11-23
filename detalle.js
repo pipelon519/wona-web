@@ -1,11 +1,13 @@
 // Product Database
 const productsDB = {
+    // DESAYUNOS
     'ds01': {
         name: 'Desayuno Mini',
         category: 'Desayunos',
         price: '$ 52.000',
         description: 'Un detalle pequeño pero lleno de sabor y elegancia. Perfecto para recordar a alguien especial que estás pensando en él/ella.',
-        image: 'assets/ds01.jpeg',
+        folder: 'Desayunos',
+        images: ['ds01.jpeg', 'ds01-02.jpeg', 'ds01-03.jpg', 'ds01-04.jpg', 'ds01-05.jpg', 'ds01-06.jpg', 'ds01-07.jpg', 'ds01-08.jpg'],
         includes: [
             'Crepes de jamón y queso',
             'Jugo de naranja o Milo',
@@ -17,13 +19,13 @@ const productsDB = {
             'Caja de madera decorada'
         ]
     },
-
     'ds02': {
         name: 'Desayuno Star',
         category: 'Desayunos',
-        price: '$',
+        price: '$ 75.000',
         description: 'Para quienes merecen brillar desde el primer momento del día. Nuestro desayuno estrella con los mejores ingredientes.',
-        image: 'assets/ds02.jpeg',
+        folder: 'Desayunos',
+        images: ['ds02.jpeg', 'ds02-02.jpg', 'ds02-03.jpg', 'ds02-04.jpg', 'ds02-05.jpg'],
         includes: [
             'Crepes de jamón y queso',
             'Milo o Jugo de naranja',
@@ -40,9 +42,10 @@ const productsDB = {
     'ds03': {
         name: 'Desayuno Mix',
         category: 'Desayunos',
-        price: '$ Consultar',
+        price: '$ 85.000',
         description: 'Variedad de sabores para los gustos más exigentes. Una mezcla perfecta de dulce y salado.',
-        image: 'assets/ds04.jpeg',
+        folder: 'Desayunos',
+        images: ['ds03.jpeg'],
         includes: [
             'Crepes o Sándwich',
             'Milo frío o caliente',
@@ -59,12 +62,13 @@ const productsDB = {
             'Decoración'
         ]
     },
-    'ds05': {
+    'ds04': {
         name: 'Desayuno Fiesta',
         category: 'Desayunos',
         price: '$ Consultar',
         description: '¡Celebra la vida! Ideal para cumpleaños y fechas especiales. Todo lo necesario para una mini fiesta en la cama.',
-        image: 'assets/ds05.jpeg',
+        folder: 'Desayunos',
+        images: ['ds04.jpeg', 'ds04-02.jpg'],
         includes: [
             'Crepes o Sándwich',
             'Jugo de naranja o Milo',
@@ -78,12 +82,13 @@ const productsDB = {
             'Decoración'
         ]
     },
-    'ds06': {
+    'ds05': {
         name: 'Desayuno Love',
         category: 'Desayunos',
         price: '$ Consultar',
         description: 'Romance en cada bocado. Perfecto para aniversarios o simplemente para decir "Te Amo".',
-        image: 'assets/ds06.jpeg',
+        folder: 'Desayunos',
+        images: ['ds05.jpeg', 'ds05-02.jpg', 'ds05-03.jpg', 'ds05-04.jpg'],
         includes: [
             'Crepes de jamón y queso',
             'Jugo de naranja',
@@ -100,13 +105,13 @@ const productsDB = {
             'Decoración'
         ]
     },
-
-    'ds07': {
+    'ds06': {
         name: 'Desayuno Feliz Día',
         category: 'Desayunos',
         price: '$ Consultar',
         description: 'La mejor manera de desear un gran día a esa persona especial. Energía positiva y buen gusto.',
-        image: 'assets/ds08.jpeg',
+        folder: 'Desayunos',
+        images: ['ds06.jpeg'],
         includes: [
             'Crepes de jamón y queso',
             'Arreglo con Flores pequeño',
@@ -124,6 +129,327 @@ const productsDB = {
             'Decoración',
             'Tarjeta'
         ]
+    },
+    'ds07': {
+        name: 'Desayuno Premium',
+        category: 'Desayunos',
+        price: '$ Consultar',
+        description: 'La experiencia de desayuno más completa. Ideal para ocasiones muy especiales.',
+        folder: 'Desayunos',
+        images: ['ds07.jpg', 'ds07-02.jpg', 'ds07-03.jpg', 'ds07-04.jpg'],
+        includes: [
+            'Crepes de jamón y queso',
+            'Arreglo con Flores',
+            'Torta personal',
+            'Huevos rancheros',
+            'Jugo de naranja',
+            'Chocolates',
+            'Yogurt y cereal',
+            'Mix de Frutos secos',
+            'Fruta picada',
+            'Milo',
+            'Globos con helio',
+            'Globo personalizado',
+            'Bandeja de madera',
+            'Decoración',
+            'Tarjeta'
+        ]
+    },
+    'ds08': {
+        name: 'Desayuno Especial',
+        category: 'Desayunos',
+        price: '$ Consultar',
+        description: 'Un desayuno único para momentos únicos.',
+        folder: 'Desayunos',
+        images: ['ds08.jpg'],
+        includes: [
+            'Crepes de jamón y queso',
+            'Jugo de naranja o Milo',
+            'Torta personal',
+            'Fruta picada',
+            'Chocolatina',
+            'Yogurt',
+            'Globos',
+            'Decoración',
+            'Tarjeta'
+        ]
+    },
+    'ds09': {
+        name: 'Desayuno Deluxe',
+        category: 'Desayunos',
+        price: '$ Consultar',
+        description: 'Lujo y sabor en una sola experiencia.',
+        folder: 'Desayunos',
+        images: ['ds09.jpg'],
+        includes: [
+            'Crepes de jamón y queso',
+            'Jugo de naranja o Milo',
+            'Torta personal',
+            'Fruta picada',
+            'Chocolates',
+            'Yogurt y cereal',
+            'Globos',
+            'Decoración',
+            'Tarjeta'
+        ]
+    },
+
+    // FLORES
+    'fl01': {
+        name: 'Flores #01',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Hermoso arreglo floral para ocasiones especiales.',
+        folder: 'flores',
+        images: ['fl01.jpeg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl02': {
+        name: 'Flores #02',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Elegancia natural en cada pétalo.',
+        folder: 'flores',
+        images: ['fl02.jpeg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl03': {
+        name: 'Flores #03',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Belleza clásica que nunca pasa de moda.',
+        folder: 'flores',
+        images: ['fl03.jpeg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl05': {
+        name: 'Flores #05',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Frescura y color en cada arreglo.',
+        folder: 'flores',
+        images: ['fl05.jpg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl06': {
+        name: 'Flores #06',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'El detalle perfecto para expresar amor.',
+        folder: 'flores',
+        images: ['fl06.jpg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl10': {
+        name: 'Flores #10',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Delicadeza y elegancia en cada detalle.',
+        folder: 'flores',
+        images: ['fl10.jpg', 'fl10-02.jpg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl07': {
+        name: 'Flores #07',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Arreglo floral vibrante y colorido.',
+        folder: 'flores',
+        images: ['fl07.jpg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl08': {
+        name: 'Flores #08',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Belleza natural en cada pétalo.',
+        folder: 'flores',
+        images: ['fl08.jpg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl09': {
+        name: 'Flores #09',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Frescura y elegancia combinadas.',
+        folder: 'flores',
+        images: ['fl09.jpg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl11': {
+        name: 'Flores #11',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Arreglo especial para ocasiones únicas.',
+        folder: 'flores',
+        images: ['fl11.jpg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl12': {
+        name: 'Flores #12',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Delicadeza en cada detalle floral.',
+        folder: 'flores',
+        images: ['fl12.jpg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl13': {
+        name: 'Flores #13',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Hermoso arreglo para expresar sentimientos.',
+        folder: 'flores',
+        images: ['fl13.jpg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+    'fl14': {
+        name: 'Flores #14',
+        category: 'Flores',
+        price: '$ Consultar',
+        description: 'Elegancia y color en perfecta armonía.',
+        folder: 'flores',
+        images: ['fl14.jpg'],
+        includes: [
+            'Flores frescas de temporada',
+            'Arreglo personalizado',
+            'Tarjeta de dedicatoria'
+        ]
+    },
+
+    // CAJAS
+    'cj01': {
+        name: 'Caja #01',
+        category: 'Cajas',
+        price: '$ Consultar',
+        description: 'Caja sorpresa con dulces detalles.',
+        folder: 'Cajas',
+        images: ['cj01.jpeg'],
+        includes: [
+            'Caja decorada',
+            'Dulces y snacks',
+            'Tarjeta personalizada',
+            'Decoración especial'
+        ]
+    },
+    'cj02': {
+        name: 'Caja #02',
+        category: 'Cajas',
+        price: '$ Consultar',
+        description: 'Caja especial para sorprender.',
+        folder: 'Cajas',
+        images: ['cj02.jpg'],
+        includes: [
+            'Caja decorada',
+            'Dulces y snacks',
+            'Tarjeta personalizada',
+            'Decoración especial'
+        ]
+    },
+
+    // PELUCHES
+    'pl01': {
+        name: 'Peluche #01',
+        category: 'Peluches',
+        price: '$ Consultar',
+        description: 'Tierno peluche para regalar.',
+        folder: 'Peluches',
+        images: ['pl01.jpg'],
+        includes: [
+            'Peluche de alta calidad',
+            'Tarjeta personalizada',
+            'Empaque especial'
+        ]
+    },
+    'pl02': {
+        name: 'Peluche #02',
+        category: 'Peluches',
+        price: '$ Consultar',
+        description: 'Compañero perfecto para regalar amor.',
+        folder: 'Peluches',
+        images: ['pl02.jpg'],
+        includes: [
+            'Peluche de alta calidad',
+            'Tarjeta personalizada',
+            'Empaque especial'
+        ]
+    },
+    'pl03': {
+        name: 'Peluche #03',
+        category: 'Peluches',
+        price: '$ Consultar',
+        description: 'Dulzura en forma de peluche.',
+        folder: 'Peluches',
+        images: ['pl03.jpg'],
+        includes: [
+            'Peluche de alta calidad',
+            'Tarjeta personalizada',
+            'Empaque especial'
+        ]
+    },
+
+    // ANCHETAS
+    'af01': {
+        name: 'Ancheta #01',
+        category: 'Anchetas',
+        price: '$ Consultar',
+        description: 'Ancheta especial con productos seleccionados.',
+        folder: 'Anchetas',
+        images: ['af01.jpg'],
+        includes: [
+            'Canasta decorada',
+            'Productos seleccionados',
+            'Tarjeta personalizada',
+            'Decoración especial'
+        ]
     }
 };
 
@@ -137,12 +463,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update DOM elements
         document.title = `${product.name} | Wona`;
-        document.getElementById('product-img').src = product.image;
-        document.getElementById('product-img').alt = product.name;
         document.getElementById('product-category').textContent = product.category;
         document.getElementById('product-name').textContent = product.name;
         document.getElementById('product-price').textContent = product.price;
         document.getElementById('product-description').textContent = product.description;
+
+        // Load images
+        const mainImg = document.getElementById('product-img');
+        const thumbnailGallery = document.getElementById('thumbnail-gallery');
+
+        if (product.images && product.images.length > 0) {
+            // Set main image
+            const mainImagePath = `assets/${product.folder}/${product.images[0]}`;
+            mainImg.src = mainImagePath;
+            mainImg.alt = product.name;
+
+            // Create thumbnails if there are multiple images
+            if (product.images.length > 1) {
+                product.images.forEach((imageName, index) => {
+                    const imagePath = `assets/${product.folder}/${imageName}`;
+                    const thumb = document.createElement('img');
+                    thumb.src = imagePath;
+                    thumb.alt = `${product.name} - Vista ${index + 1}`;
+                    thumb.classList.add('thumbnail');
+                    if (index === 0) thumb.classList.add('active');
+
+                    thumb.addEventListener('click', () => {
+                        mainImg.src = imagePath;
+                        // Update active thumbnail
+                        document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                        thumb.classList.add('active');
+                    });
+
+                    thumbnailGallery.appendChild(thumb);
+                });
+            }
+        }
 
         // Populate Includes List
         const includesList = document.getElementById('product-includes');
@@ -154,7 +510,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update WhatsApp Link
         const whatsappMsg = `Hola Wona, me interesa el ${product.name} que vi en su página web.`;
-        const whatsappUrl = `https://wa.me/573009798063?text=${encodeURIComponent(whatsappMsg)}`; // Updated number
+        const whatsappUrl = `https://wa.me/573009798063?text=${encodeURIComponent(whatsappMsg)}`;
         document.getElementById('whatsapp-btn').href = whatsappUrl;
 
     } else {
